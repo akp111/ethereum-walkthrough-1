@@ -76,6 +76,7 @@ contract Wrestling {
     function endOfRound() internal {
     	wrestler1Played = false;
     	wrestler2Played = false;
+	wrestle()
 
     	emit EndOfRoundEvent(wrestler1Deposit, wrestler2Deposit);
     }
