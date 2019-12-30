@@ -33,6 +33,7 @@ contract Wrestling {
     */
 	constructor() public {
 		wrestler1 = msg.sender;
+		gameFinished=false;
 	}
 
     /**
