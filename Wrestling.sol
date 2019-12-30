@@ -39,7 +39,7 @@ contract Wrestling {
     * A second wrestler can register as an opponent
     */
 	function registerAsAnOpponent() public {
-        require(wrestler2 == address(0));
+        require(wrestler2 != address(0));//make sure wrestler2 is not an empty address
 
         wrestler2 = msg.sender;
 
